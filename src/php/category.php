@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
 <main class="main-block category">
+	<div class="wrapper">
+	<section>
 <header class="category__header">
 	<h1 class="category__header__title">
 		<?php single_term_title(); ?>
@@ -36,6 +38,8 @@
 </section>
 
 <?php get_template_part( 'nav', 'below' ); ?>
+</section>
+</div>
 </main>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
