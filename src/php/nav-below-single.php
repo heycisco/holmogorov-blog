@@ -6,7 +6,7 @@
 		$previous_post = get_previous_post();
 		if( ! empty($previous_post) ){
 			?>
-		<a href="<?php echo get_permalink( $previous_post ); ?>" title="<?php echo esc_html($previous_post->post_title); ?>"
+		<a href="<?php echo get_permalink( $previous_post ); ?>" title="<?php echo esc_html($previous_post->post_title); ?>">
 			<svg
 				aria-hidden="true"
 				focusable="false"
