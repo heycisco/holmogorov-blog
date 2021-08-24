@@ -635,6 +635,7 @@ a:active {
   flex-direction: column;
   justify-content: space-between;
   flex: 1 1 auto;
+  margin: 0;
 }
 
 .heycisco-proj .main-block.single-post article .header {
