@@ -8,6 +8,9 @@ Template Name: Домашнаяя страница
 	<div class="wrapper">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
+<article>
+<?php the_content(); ?>
+</article>
 
 	<section class="category-list__content content">
 <?php
