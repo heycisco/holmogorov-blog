@@ -1015,6 +1015,14 @@ a:active {
   background: #f70000;
 }
 
+.heycisco-proj .post-nav.category .posts-navigation {
+  position: relative;
+}
+
+.heycisco-proj .post-nav.category h2.screen-reader-text {
+  margin-bottom: 1em;
+}
+
 .heycisco-proj .post-nav.category .nav-links {
   position: relative;
 }

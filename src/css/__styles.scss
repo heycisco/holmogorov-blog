@@ -164,6 +164,12 @@
 }
 
 .post-nav.category {
+	.posts-navigation {
+		position: relative;
+	}
+	h2.screen-reader-text {
+		margin-bottom: 1em;
+	}
 	.nav-links {
 		position: relative;
 		.nav-previous {
