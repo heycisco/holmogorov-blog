@@ -8,7 +8,7 @@
 	</div>
 <?php endif; ?>
 <div class="content">
-<img src="img/staple/01.svg" class="staple-content" />
+<img src="<?php echo get_template_directory_uri();?>/img/staple/01.svg" class="staple-content" />
 <h2 class="title"><?php the_title(); ?></h2>
 <div class="short-text">
 <?php the_excerpt(); ?>
