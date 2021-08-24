@@ -1,4 +1,4 @@
-const elToDisableActions = $("button, .menu-item-has-children>a");
+const elToDisableActions = $("button");
 const articlePrev = $(".article-prev");
 const articlePrevPic = $(".article-prev .picture");
 const articleStaple = $(".article-prev .staple-content");
