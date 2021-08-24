@@ -767,74 +767,6 @@ a:active {
   background: #f70000;
 }
 
-.heycisco-proj .main-block.single-post .post-footer .post-nav {
-  position: relative;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-nav > * {
-  position: absolute;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-nav > * a {
-  color: #4f4f4f;
-  transition: color 0.4s ease-in;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-nav > * a:hover {
-  color: #f15a24;
-  transition: color 0.15s ease-in;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-nav > * svg {
-  width: 1.5em;
-  height: 1.5em;
-  padding: 0.2em;
-  position: relative;
-  top: 0.4em;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-nav .left {
-  left: 0;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-nav .left svg {
-  transform: rotate(270deg);
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-nav .center-1 {
-  left: 50%;
-  transform: translateX(-50%);
-  top: -3.5em;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-nav .center-1 svg {
-  left: 50%;
-  transform: translateX(-50%);
-  top: -1.35em;
-  position: absolute;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-nav .center-2 {
-  left: 50%;
-  transform: translateX(-50%);
-  top: 4em;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-nav .center-2 svg {
-  left: 50%;
-  top: 1.35em;
-  transform: translateX(-50%) rotate(180deg);
-  position: absolute;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-nav .right {
-  right: 0;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-nav .right svg {
-  transform: rotate(90deg);
-}
-
 .heycisco-proj .post-content mark {
   background: #36637061;
   padding: 0 0.15em;
@@ -1013,4 +945,72 @@ a:active {
   justify-content: space-between;
   flex: 1 1 auto;
   margin: 3em 0;
+}
+
+.heycisco-proj .post-nav {
+  position: relative;
+}
+
+.heycisco-proj .post-nav > * {
+  position: absolute;
+}
+
+.heycisco-proj .post-nav > * a {
+  color: #4f4f4f;
+  transition: color 0.4s ease-in;
+}
+
+.heycisco-proj .post-nav > * a:hover {
+  color: #f15a24;
+  transition: color 0.15s ease-in;
+}
+
+.heycisco-proj .post-nav > * svg {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.2em;
+  position: relative;
+  top: 0.4em;
+}
+
+.heycisco-proj .post-nav .left {
+  left: 0;
+}
+
+.heycisco-proj .post-nav .left svg {
+  transform: rotate(270deg);
+}
+
+.heycisco-proj .post-nav .center-1 {
+  left: 50%;
+  transform: translateX(-50%);
+  top: -3.5em;
+}
+
+.heycisco-proj .post-nav .center-1 svg {
+  left: 50%;
+  transform: translateX(-50%);
+  top: -1.35em;
+  position: absolute;
+}
+
+.heycisco-proj .post-nav .center-2 {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 4em;
+}
+
+.heycisco-proj .post-nav .center-2 svg {
+  left: 50%;
+  top: 1.35em;
+  transform: translateX(-50%) rotate(180deg);
+  position: absolute;
+}
+
+.heycisco-proj .post-nav .right {
+  right: 0;
+}
+
+.heycisco-proj .post-nav .right svg {
+  transform: rotate(90deg);
 }

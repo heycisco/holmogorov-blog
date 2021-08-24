@@ -12,3 +12,71 @@
 		margin: 3em 0;
 	}
 }
+
+.post-nav {
+	position: relative;
+
+	> * {
+		position: absolute;
+
+		a {
+			color: $header-bg;
+			transition: color $tansition-out;
+
+			&:hover {
+				color: $orange;
+				transition: color $tansition-in;
+			}
+		}
+	}
+
+	> * svg {
+		width: 1.5em;
+		height: 1.5em;
+		padding: 0.2em;
+		position: relative;
+		top: 0.4em;
+	}
+
+	.left {
+		left: 0;
+
+		svg {
+			transform: rotate(270deg);
+		}
+	}
+
+	.center-1 {
+		left: 50%;
+		transform: translateX(-50%);
+		top: -3.5em;
+
+		svg {
+			left: 50%;
+			transform: translateX(-50%);
+			top: -1.35em;
+			position: absolute;
+		}
+	}
+
+	.center-2 {
+		left: 50%;
+		transform: translateX(-50%);
+		top: 4em;
+
+		svg {
+			left: 50%;
+			top: 1.35em;
+			transform: translateX(-50%) rotate(180deg);
+			position: absolute;
+		}
+	}
+
+	.right {
+		right: 0;
+
+		svg {
+			transform: rotate(90deg);
+		}
+	}
+}
