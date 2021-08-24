@@ -34,7 +34,7 @@ if ( $image_url ) {
 	echo '<div class="image-wrapper"><img src="' . $image_url . '"></div>';
 } else {
 // Если нет картинки
-	echo '<div class="image-wrapper"><img src="' . get_template_directory_uri() . '/images/placeholders/48x48.jpg"></div>';
+	echo '<div class="image-wrapper"><img src="' . get_template_directory_uri() . '/img/placeholders/48x48.jpg"></div>';
 }
 echo '<div class="content-wrapper"><h3 class="title">' . $category->name.'</h3>';
 if ( $category->description ) {
