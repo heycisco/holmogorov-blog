@@ -5,6 +5,7 @@ Template Name: Домашнаяя страница
 ?>
 <?php get_header(); ?>
 <main class="main-block homepage">
+	<div class="wrapper">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 
@@ -44,6 +45,7 @@ if ( $category->description ) {
 </section>
 
 <?php endwhile; endif; ?>
+</div>
 </main>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
