@@ -1,6 +1,6 @@
 jQuery.noConflict();
 jQuery(function() {
-	const elToDisableActions = jQuery("button, .menu-item-has-children a");
+	const elToDisableActions = jQuery("button, .menu-item-has-children>a");
 const articlePrev = jQuery(".article-prev");
 const articlePrevPic = jQuery(".article-prev .picture");
 const articleStaple = jQuery(".article-prev .staple-content");
