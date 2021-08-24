@@ -209,7 +209,7 @@ function wordpress() {
 		.pipe(replace(wpc.jq_noconflict[0], wpc.jq_noconflict[1]))
 		.pipe(dest(wp_folder + "/js/"));
 
-	src(path.wp.img).pipe(dest(wp_folder + "/images/"));
+	src(path.wp.img).pipe(dest(wp_folder + "/img/"));
 	src(path.wp.fonts).pipe(dest(wp_folder + "/fonts/"));
 	return src(path.wp.php);
 }
