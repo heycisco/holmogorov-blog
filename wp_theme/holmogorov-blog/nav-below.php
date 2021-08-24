@@ -8,11 +8,11 @@ $prev_text = $nav_arrow . $prev_label;
 <div class="post-nav">
 
 	<div class="left">
-		<?php the_post_navigation( array('prev_text' => $prev_text) );?>
+		<?php the_posts_navigation( array('prev_text' => $prev_text) );?>
 	</div>
 
 	<div class="right">
-		<a href="">Следующий пост</a>
+		<a href=""></a>
 	</div>
 
 </div>
