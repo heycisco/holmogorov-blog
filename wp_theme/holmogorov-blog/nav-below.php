@@ -14,7 +14,7 @@ $next_text = $next_label . $nav_arrow;
 	</div>
 
 	<div class="right">
-		<?php the_posts_navigation( array('prev_text' => $next_text) );?>
+		<?php the_posts_navigation( array('next_text' => $next_text) );?>
 	</div>
 
 </div>
