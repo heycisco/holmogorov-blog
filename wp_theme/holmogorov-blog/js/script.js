@@ -1,13 +1,13 @@
 jQuery.noConflict();
 jQuery(function() {
-	const elToDisableActions = jQuery('button');
-const articlePrev = jQuery('.article-prev');
-const articlePrevPic = jQuery('.article-prev .picture');
-const articleStaple = jQuery('.article-prev .staple-content');
-const scrollTopBtn = jQuery('.btn-to-top');
-const headerBranding = jQuery('.main-header .branding');
-const singlePostHeader = jQuery('.main-block.single-post .header');
-const singlePostWrapper = jQuery('.main-block.single-post .wrapper');
+	const elToDisableActions = jQuery("button, .menu-item-has-children a");
+const articlePrev = jQuery(".article-prev");
+const articlePrevPic = jQuery(".article-prev .picture");
+const articleStaple = jQuery(".article-prev .staple-content");
+const scrollTopBtn = jQuery(".btn-to-top");
+const headerBranding = jQuery(".main-header .branding");
+const singlePostHeader = jQuery(".main-block.single-post .header");
+const singlePostWrapper = jQuery(".main-block.single-post .wrapper");
 ; // тут переменные
 	// Отключение действий при нажатии на кнопки
 function preventDefault() {

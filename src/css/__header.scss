@@ -3,7 +3,7 @@
 	text-transform: uppercase;
 	color: $text;
 
-	>* {
+	> * {
 		width: 100%;
 		position: relative;
 	}
@@ -14,7 +14,7 @@
 			content: "";
 			display: block;
 			position: absolute;
-			left: calc(var(--section-padding)* -1);
+			left: calc(var(--section-padding) * -1);
 			background: $gray-1;
 			height: 4px;
 			width: calc(var(--section-padding) - var(--el-indents));
@@ -67,12 +67,12 @@
 		}
 	}
 
-
-
 	.main-nav {
 		font-size: 1.8rem;
 		line-height: 1;
-
+		.menu-toggle {
+			display: none;
+		}
 		ul {
 			li {
 				position: relative;
@@ -103,7 +103,6 @@
 							left: 0;
 							transition: all $tansition-in;
 						}
-
 					}
 				}
 
@@ -142,13 +141,13 @@
 						}
 					}
 
-					>a {
+					> a {
 						span {
 							position: absolute;
 							top: 18px;
 							right: -1em;
 							transform: rotate(0);
-							transform-origin: .4em .4em;
+							transform-origin: 0.4em 0.4em;
 							color: $gray-1;
 							transition: all $tansition-out;
 							svg {
@@ -178,7 +177,6 @@
 					&.clicked a:hover span {
 						transform: rotate(90deg);
 					}
-
 				}
 			}
 		}
@@ -205,7 +203,7 @@
 				content: "";
 				display: block;
 				position: absolute;
-				right: calc(var(--section-padding)* -1);
+				right: calc(var(--section-padding) * -1);
 				top: calc(50% - 2px);
 				background: #999;
 				height: 4px;
