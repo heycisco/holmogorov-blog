@@ -1014,3 +1014,25 @@ a:active {
 .heycisco-proj .post-share a#link_yandex:hover:before {
   background: #f70000;
 }
+
+.heycisco-proj .post-nav.category .nav-links {
+  position: relative;
+}
+
+.heycisco-proj .post-nav.category .nav-links .nav-previous {
+  position: absolute;
+  left: 0;
+}
+
+.heycisco-proj .post-nav.category .nav-links .nav-previous svg {
+  transform: rotate(-90deg);
+}
+
+.heycisco-proj .post-nav.category .nav-links .nav-next {
+  position: absolute;
+  right: 0;
+}
+
+.heycisco-proj .post-nav.category .nav-links .nav-next svg {
+  transform: rotate(90deg);
+}

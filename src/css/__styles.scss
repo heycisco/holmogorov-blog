@@ -162,3 +162,23 @@
 		}
 	}
 }
+
+.post-nav.category {
+	.nav-links {
+		position: relative;
+		.nav-previous {
+			position: absolute;
+			left: 0;
+			svg {
+				transform: rotate(-90deg);
+			}
+		}
+		.nav-next {
+			position: absolute;
+			right: 0;
+			svg {
+				transform: rotate(90deg);
+			}
+		}
+	}
+}
