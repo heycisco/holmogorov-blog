@@ -183,11 +183,6 @@ a:active {
   position: relative;
 }
 
-.heycisco-proj .main-header .branding h1,
-.heycisco-proj .main-header .copyright {
-  color: red;
-}
-
 .heycisco-proj .main-header .branding h1:before,
 .heycisco-proj .main-header .copyright:before {
   content: "";
