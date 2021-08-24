@@ -1,0 +1,17 @@
+.single {
+	padding: 0 var(--grid-sides);
+	>* {
+		padding: var(--content-indents) 0;
+	}
+	&__article {
+		&__header {}
+
+		&__content {}
+
+		&__footer {}
+	}
+
+	.footer {
+
+	}
+}

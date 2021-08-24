@@ -1,0 +1,34 @@
+// Обнуление стилей:
+@import "defs/__nullstyle.scss";
+
+// Глобальные переменные
+@import "defs/__vars.scss";
+
+// Глобальные стили
+@import "defs/__defs.scss";
+
+// Глобальные эффекты
+@import "__global-effects.scss";
+
+.heycisco-proj {
+	// <= Оборачиваем стили в класс body
+	@import "__header.scss";
+	@import "__footer.scss";
+	@import "components/__menu-main.scss";
+	@import "components/__searchform.scss";
+
+	.main-block {
+		@import "__main-content.scss";
+		@import "parts/__page.scss";
+		@import "parts/__home.scss";
+		@import "parts/__category.scss";
+		@import "parts/__category-list.scss";
+		@import "parts/__article.scss";
+		@import "parts/__search.scss";
+		@import "parts/__404.scss";
+		@import "components/__comments.scss";
+		@import "components/__post-category-nav.scss";
+	}
+
+	@import "__styles.scss";
+}
