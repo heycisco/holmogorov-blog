@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="main-block__category category">
+<main class="main-block category">
 <header class="category__header">
 	<h1 class="category__header__title">
 		<?php single_term_title(); ?>
@@ -29,7 +29,7 @@
 	</div>
 </header>
 
-<section class="category__posts content">
+<section class="category__posts">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'entry' ); ?>
 <?php endwhile; endif; ?>
