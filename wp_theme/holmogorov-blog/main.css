@@ -995,6 +995,10 @@ a:active {
   margin: 0 1em;
 }
 
+.heycisco-proj .homepage section.category-list__content.content {
+  flex-direction: row;
+}
+
 .heycisco-proj .main-block {
   padding: var(--section-padding) 0;
   padding-top: 0;
@@ -1002,7 +1006,7 @@ a:active {
   justify-content: space-between;
 }
 
-.heycisco-proj .main-block section.content {
+.heycisco-proj .main-block section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
