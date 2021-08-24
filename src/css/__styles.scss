@@ -174,14 +174,14 @@
 		position: relative;
 		.nav-previous {
 			position: absolute;
-			left: 0;
+			left: -0.5em;
 			svg {
 				transform: rotate(-90deg);
 			}
 		}
 		.nav-next {
 			position: absolute;
-			right: 0;
+			right: -0.5em;
 			svg {
 				transform: rotate(90deg);
 			}

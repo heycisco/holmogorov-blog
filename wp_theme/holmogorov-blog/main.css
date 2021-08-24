@@ -1029,7 +1029,7 @@ a:active {
 
 .heycisco-proj .post-nav.category .nav-links .nav-previous {
   position: absolute;
-  left: 0;
+  left: -0.5em;
 }
 
 .heycisco-proj .post-nav.category .nav-links .nav-previous svg {
@@ -1038,7 +1038,7 @@ a:active {
 
 .heycisco-proj .post-nav.category .nav-links .nav-next {
   position: absolute;
-  right: 0;
+  right: -0.5em;
 }
 
 .heycisco-proj .post-nav.category .nav-links .nav-next svg {
