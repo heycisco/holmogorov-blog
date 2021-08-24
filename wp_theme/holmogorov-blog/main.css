@@ -586,6 +586,27 @@ a:active {
   z-index: 2;
 }
 
+.heycisco-proj .category-list__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.heycisco-proj .category-list__content article {
+  flex: 0 1 48%;
+  position: relative;
+}
+
+.heycisco-proj .category-list__content article > a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+
 .heycisco-proj .main-block.single-post {
   padding: var(--section-padding) 0;
   padding-top: 0;
