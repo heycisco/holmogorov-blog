@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="main-block category">
+<main class="main-block category" id="top">
 	<div class="wrapper">
 	<section>
 <header class="category__header">
