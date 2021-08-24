@@ -50,7 +50,14 @@
 		</a>
 	</div>
 	<div class="center-2">
-		<a href="#top" title="Наверх" class="btn-to-top">
+
+		<?php
+		if(have_posts()) : while(have_posts()) : the_post();
+			$cats = wp_get_post_categories($post->ID);
+			if($cats) : foreach($cats as $cat) : $category = get_category($cat);
+			?>
+
+		<a href="<?php echo get_category_link($category->cat_ID); ?>" title="<?php echo $category->name ?>" class="btn-to-top">
 			<svg
 				aria-hidden="true"
 				focusable="false"
@@ -68,6 +75,10 @@
 			</svg>
 			В категорию
 		</a>
+		<?php
+    endforeach;endif;
+endwhile;endif;
+?>
 	</div>
 
 
