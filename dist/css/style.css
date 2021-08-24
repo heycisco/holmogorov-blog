@@ -704,69 +704,6 @@ a:active {
   text-transform: uppercase;
 }
 
-.heycisco-proj .main-block.single-post .post-footer .post-share {
-  margin: 0 auto;
-  position: relative;
-  top: 0.4em;
-  width: fit-content;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share span {
-  margin-right: 0.5em;
-  position: relative;
-  top: -0.1em;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share a {
-  margin-right: 0.1em;
-  padding: 0.25em;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share a svg {
-  width: 1.2em;
-  height: 1.2em;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share a:hover svg {
-  transition: all 0.15s ease-in;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share a:hover:before {
-  transition: all 0.15s ease-in;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share a#link_vk:hover svg {
-  color: #4a719e;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share a#link_vk:hover:before {
-  background: #4a719e;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share a#link_fb:hover svg {
-  color: #3a5794;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share a#link_fb:hover:before {
-  background: #3a5794;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share a#link_insta:hover svg {
-  color: #d6249f;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share a#link_insta:hover:before {
-  background: #d6249f;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share a#link_yandex:hover svg {
-  color: #f70000;
-}
-
-.heycisco-proj .main-block.single-post .post-footer .post-share a#link_yandex:hover:before {
-  background: #f70000;
-}
-
 .heycisco-proj .post-content mark {
   background: #36637061;
   padding: 0 0.15em;
@@ -1013,4 +950,67 @@ a:active {
 
 .heycisco-proj .post-nav .right svg {
   transform: rotate(90deg);
+}
+
+.heycisco-proj .post-share {
+  margin: 0 auto;
+  position: relative;
+  top: 0.4em;
+  width: fit-content;
+}
+
+.heycisco-proj .post-share span {
+  margin-right: 0.5em;
+  position: relative;
+  top: -0.1em;
+}
+
+.heycisco-proj .post-share a {
+  margin-right: 0.1em;
+  padding: 0.25em;
+}
+
+.heycisco-proj .post-share a svg {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.heycisco-proj .post-share a:hover svg {
+  transition: all 0.15s ease-in;
+}
+
+.heycisco-proj .post-share a:hover:before {
+  transition: all 0.15s ease-in;
+}
+
+.heycisco-proj .post-share a#link_vk:hover svg {
+  color: #4a719e;
+}
+
+.heycisco-proj .post-share a#link_vk:hover:before {
+  background: #4a719e;
+}
+
+.heycisco-proj .post-share a#link_fb:hover svg {
+  color: #3a5794;
+}
+
+.heycisco-proj .post-share a#link_fb:hover:before {
+  background: #3a5794;
+}
+
+.heycisco-proj .post-share a#link_insta:hover svg {
+  color: #d6249f;
+}
+
+.heycisco-proj .post-share a#link_insta:hover:before {
+  background: #d6249f;
+}
+
+.heycisco-proj .post-share a#link_yandex:hover svg {
+  color: #f70000;
+}
+
+.heycisco-proj .post-share a#link_yandex:hover:before {
+  background: #f70000;
 }

@@ -80,3 +80,85 @@
 		}
 	}
 }
+
+.post-share {
+	margin: 0 auto;
+	position: relative;
+	top: 0.4em;
+	width: fit-content;
+
+	// &:before, &:after {
+	// 	content: "";
+	// 	display: block;
+	// 	height: 4px;
+	// 	width: 3em;
+	// 	margin: 0 1em;
+	// 	background: $gray-1;
+	// }
+
+	span {
+		margin-right: 0.5em;
+		position: relative;
+		top: -0.1em;
+	}
+
+	a {
+		margin-right: 0.1em;
+		padding: 0.25em;
+
+		svg {
+			width: 1.2em;
+			height: 1.2em;
+		}
+
+		&:hover {
+			svg {
+				transition: all $tansition-in;
+			}
+
+			&:before {
+				transition: all $tansition-in;
+			}
+		}
+
+		&#link_vk:hover {
+			svg {
+				color: #4a719e;
+			}
+
+			&:before {
+				background: #4a719e;
+			}
+		}
+
+		&#link_fb:hover {
+			svg {
+				color: #3a5794;
+			}
+
+			&:before {
+				background: #3a5794;
+			}
+		}
+
+		&#link_insta:hover {
+			svg {
+				color: #d6249f;
+			}
+
+			&:before {
+				background: #d6249f;
+			}
+		}
+
+		&#link_yandex:hover {
+			svg {
+				color: #f70000;
+			}
+
+			&:before {
+				background: #f70000;
+			}
+		}
+	}
+}
