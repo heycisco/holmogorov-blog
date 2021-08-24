@@ -610,7 +610,7 @@ a:active {
 
 .heycisco-proj .category-list__content article .image-wrapper {
   object-fit: cover;
-  max-height: 240px;
+  height: 240px;
   overflow: hidden;
 }
 
