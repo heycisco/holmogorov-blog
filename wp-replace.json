@@ -10,5 +10,9 @@
 	"css_urls": [
 		"url(\"../",
 		"url(\""
+	],
+	"css_urls2": [
+		"url(../",
+		"url("
 	]
 }

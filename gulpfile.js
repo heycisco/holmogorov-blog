@@ -195,6 +195,7 @@ function wordpress() {
 
 	src(path.wp.css)
 		.pipe(replace(wpc.css_urls[0], wpc.css_urls[1]))
+		.pipe(replace(wpc.css_urls2[0], wpc.css_urls2[1]))
 		.pipe(
 			rename({
 				basename: "main",

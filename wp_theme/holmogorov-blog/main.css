@@ -495,7 +495,7 @@ a:active {
   display: block;
   width: calc(24px * var(--staple-size));
   height: calc(80px * var(--staple-size));
-  background-image: url(../img/staple/02.svg);
+  background-image: url(img/staple/02.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -905,27 +905,27 @@ a:active {
 }
 
 .heycisco-proj .article-prev.bg-1 {
-  background-image: url(../img/random-bg/body1.svg);
+  background-image: url(img/random-bg/body1.svg);
 }
 
 .heycisco-proj .article-prev.bg-1:before {
-  background-image: url(../img/random-bg/before1.svg);
+  background-image: url(img/random-bg/before1.svg);
 }
 
 .heycisco-proj .article-prev.bg-1:after {
-  background-image: url(../img/random-bg/after1.svg);
+  background-image: url(img/random-bg/after1.svg);
 }
 
 .heycisco-proj .article-prev.bg-2 {
-  background-image: url(../img/random-bg/body2.svg);
+  background-image: url(img/random-bg/body2.svg);
 }
 
 .heycisco-proj .article-prev.bg-2:before {
-  background-image: url(../img/random-bg/before2.svg);
+  background-image: url(img/random-bg/before2.svg);
 }
 
 .heycisco-proj .article-prev.bg-2:after {
-  background-image: url(../img/random-bg/after2.svg);
+  background-image: url(img/random-bg/after2.svg);
 }
 
 .heycisco-proj .article-prev .staple-1:after {
