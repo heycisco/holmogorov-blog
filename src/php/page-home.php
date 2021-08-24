@@ -6,9 +6,6 @@ Template Name: Домашнаяя страница
 <?php get_header(); ?>
 <main class="main-block homepage">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	<header class="category-list__header">
-		<h3><?php the_title(); ?></h3>
-	</header>
 	
 
 	<section class="category-list__content">
