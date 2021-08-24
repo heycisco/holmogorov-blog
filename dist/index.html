@@ -1,190 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Ruda&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ruda&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico" />
+		<meta property="og:title" content="Project title here" />
+		<meta property="og:description" content="Project description here" />
 
-<head>
-	<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Project</title>
+	</head>
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
-<meta property="og:title" content="Project title here">
-<meta property="og:description" content="Project description here">
-	<title>Project</title>
-</head>
+	<body class="heycisco-proj main-body">
+		<header class="main-header">
+			<div class="branding">
+				<a href="/" title="На главную">
+					<h1>Блог<br />Валентина<br />Холмогорова</h1>
+				</a>
+			</div>
 
-<body class="heycisco-proj main-body">
-
-<header class="main-header">
-	<div class="main-header__branding">
-<div class="main-header__branding__title">
-		<h1><a href="http://dev.starchenkov.pro/" title="Starchenkov Dev" rel="home">Starchenkov Dev</a></h1>
-	</div>
-<div class="main-header__branding__description">Сайт для начального развертывания Wordpress</div>
-</div>
-	<nav class="main-header__menu main-menu" role="navigation">
-	<button type="button" class="menu-toggle"><span class="menu-icon">☰</span><span class="menu-text screen-reader-text"> Menu</span></button>
-	<div class="menu-main-menu-container">
-		<ul id="menu-main-menu" class="menu">
-			<li id="menu-item-2139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2139"><a href="page.html">Standart page</a></li>
-			<li id="menu-item-2138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"><a href="search.html">Search page</a></li>
-			<li id="menu-item-2127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2127"><a href="category.html">Category</a></li>
-			<li id="menu-item-2128" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2128"><a href="category.html">Have submenu</a>
-				<ul class="sub-menu">
-					<li id="menu-item-2129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2129"><a href="404.html">404 page</a></li>
-					<li id="menu-item-2130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1133 current_page_item menu-item-2130"><a href="" aria-current="page">***Item***</a></li>
-					<li id="menu-item-2131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2131"><a href="http://dev.starchenkov.pro/about/clearing-floats/">Clearing Floats</a></li>
+			<div class="main-nav">
+				<ul>
+					<li class="menu-item-has-children">
+						<a href="#">Блог</a>
+						<ul>
+							<li>
+								<a href="category.html">Страница категории постов</a>
+							</li>
+							<li><a href="single-post.html">Одиночная запись</a></li>
+							<li><a href="category.html">Quia</a></li>
+							<li><a href="category.html">Voluptatem</a></li>
+							<li><a href="category.html">Cumque</a></li>
+						</ul>
+					</li>
+					<li class="menu-item-has-children">
+						<a href="#">Мои книги</a>
+						<ul>
+							<li><a href="#">Lorem</a></li>
+							<li><a href="#">Quas</a></li>
+							<li><a href="#">Quia</a></li>
+							<li><a href="#">Voluptatem</a></li>
+							<li><a href="#">Cumque</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Обо мне</a></li>
+					<li><a href="#">Контакты</a></li>
 				</ul>
-			</li>
-			<li id="menu-item-2132" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2132"><a href="category-list.html">Category list</a></li>
-			<li id="menu-item-2134" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2134"><a href="single-post.html">Single post</a></li>
-		</ul>
-	</div>
-</nav>
+			</div>
+			<div class="copyright">
+				<span>© Валентин Холмогоров.</span>
+				<span
+					>Перепечатка материалов и статей допускается только с указанием
+					авторства и ссылкой на сайт holmogorov.ru</span
+				>
+			</div>
+		</header>
+		<main class="main-block homepage">
+			<section class="homepage-content">
+				<h1>Title 1</h1>
+				<h2>Title 2</h2>
+				<h3>Title 3</h3>
+				<h4>Title 4</h4>
+				<img src="img/ph/200x130.jpg" />
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					<a>LINK => Est vel adipisci velit, temporibus sunt rem</a>, rerum
+					ratione fuga vitae minima facilis impedit molestiae labore error
+					deserunt! Eveniet aliquid veritatis aspernatur?
+				</p>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est vel
+					adipisci velit, temporibus sunt rem, rerum ratione fuga vitae
+					minima facilis impedit molestiae labore error deserunt! Eveniet
+					aliquid veritatis aspernatur?
+				</p>
+				<strong>List:</strong>
+				<ul>
+					<li>Lorem, ipsum, dolor.</li>
+					<li>Nesciunt, fugiat, itaque.</li>
+					<li>Mollitia, rerum, qui.</li>
+				</ul>
+			</section>
+		</main>
+		<div class="main-aside">
+			<div class="social">
+				<a href="#" id="link_vk" title="Название ссылки">
+					<svg
+						aria-hidden="true"
+						focusable="false"
+						data-prefix="fab"
+						data-icon="vk"
+						class="svg-inline--fa fa-vk fa-w-18"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 576 512"
+					>
+						<path
+							fill="currentColor"
+							d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"
+						></path>
+					</svg>
+				</a>
+				<a href="#" id="link_fb" title="Название ссылки">
+					<svg
+						aria-hidden="true"
+						focusable="false"
+						data-prefix="fab"
+						data-icon="facebook-f"
+						class="svg-inline--fa fa-facebook-f fa-w-10"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 320 512"
+					>
+						<path
+							fill="currentColor"
+							d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+						></path>
+					</svg>
+				</a>
+				<a href="#" id="link_insta" title="Название ссылки">
+					<svg
+						aria-hidden="true"
+						focusable="false"
+						data-prefix="fab"
+						data-icon="instagram"
+						class="svg-inline--fa fa-instagram fa-w-14"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 448 512"
+					>
+						<path
+							fill="currentColor"
+							d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+						></path>
+					</svg>
+				</a>
+				<a href="#" id="link_yandex" title="Название ссылки">
+					<svg
+						aria-hidden="true"
+						focusable="false"
+						data-prefix="fab"
+						data-icon="yandex"
+						class="svg-inline--fa fa-yandex fa-w-8"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 256 512"
+					>
+						<path
+							fill="currentColor"
+							d="M153.1 315.8L65.7 512H2l96-209.8c-45.1-22.9-75.2-64.4-75.2-141.1C22.7 53.7 90.8 0 171.7 0H254v512h-55.1V315.8h-45.8zm45.8-269.3h-29.4c-44.4 0-87.4 29.4-87.4 114.6 0 82.3 39.4 108.8 87.4 108.8h29.4V46.5z"
+						></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<!-- Сетка для контроля вёрстки: -->
 
-	<form
-	class="search-form"
-	role="search"
-	method="get"
-	id="searchform"
-	action="http://dev.starchenkov.pro/"
->
-	<input type="text" value="" name="s" id="s" />
-	<input type="submit" id="searchsubmit" value="Искать" />
-</form>
-
-</header>
-<div class="main-block wrapper">
-
-<main class="main-block__page page">
-<article>
-<section class="page__content">
-<p>Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let’s get started.</p>
-<p>On the topic of alignment, it should be noted that users can choose from the options of <em>None</em>, <em>Left</em>, <em>Right, </em>and <em>Center</em>. In addition, they also get the options of <em>Thumbnail</em>, <em>Medium</em>, <em>Large</em> &amp; <em>Fullsize</em>. Be sure to try this page in RTL mode and it should look the same as LTR.</p>
-<p><img loading="lazy" class="size-full wp-image-906 aligncenter" title="Image Alignment 580x300" alt="Image Alignment 580x300" src="http://dev.starchenkov.pro/wp-content/uploads/2013/03/image-alignment-580x300-1.jpg" width="580" height="300"></p>
-<p>The image above happens to be <em><strong>centered</strong></em>.</p>
-<p><img loading="lazy" class="size-full wp-image-904 alignleft" title="Image Alignment 150x150" alt="Image Alignment 150x150" src="http://dev.starchenkov.pro/wp-content/uploads/2013/03/image-alignment-150x150-1.jpg" width="150" height="150"> The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is <em><strong>left aligned</strong></em>.</p>
-<p>As you can see there should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we’ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it’s thang. Mission accomplished!</p>
-<p>And now for a <em><strong>massively large image</strong></em>. It also has <em><strong>no alignment</strong></em>.</p>
-<p><img loading="lazy" class="alignnone  wp-image-907" title="Image Alignment 1200x400" alt="Image Alignment 1200x400" src="http://dev.starchenkov.pro/wp-content/uploads/2013/03/image-alignment-1200x4002-1.jpg" width="1200" height="400"></p>
-<p>The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.</p>
-<p><img loading="lazy" class="aligncenter  wp-image-907" title="Image Alignment 1200x400" alt="Image Alignment 1200x400" src="http://dev.starchenkov.pro/wp-content/uploads/2013/03/image-alignment-1200x4002-1.jpg" width="1200" height="400"></p>
-<p>And we try the large image again, with the center alignment since that sometimes is a problem. The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.</p>
-<p><img loading="lazy" class="size-full wp-image-905 alignright" title="Image Alignment 300x200" alt="Image Alignment 300x200" src="http://dev.starchenkov.pro/wp-content/uploads/2013/03/image-alignment-300x200-1.jpg" width="300" height="200"></p>
-<p>And now we’re going to shift things to the <em><strong>right align</strong></em>. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there… Hey guy! Way to rock that right side. I don’t care what the left aligned image says, you look great. Don’t let anyone else tell you differently.</p>
-<p>In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah… Just like that. It never felt so good to be right.</p>
-<p>And just when you thought we were done, we’re going to do them all over again with captions!</p>
-<figure id="attachment_906" aria-describedby="caption-attachment-906" style="width: 580px" class="wp-caption aligncenter"><img loading="lazy" class="size-full wp-image-906  " title="Image Alignment 580x300" alt="Image Alignment 580x300" src="http://dev.starchenkov.pro/wp-content/uploads/2013/03/image-alignment-580x300-1.jpg" width="580" height="300"><figcaption id="caption-attachment-906" class="wp-caption-text">Look at 580×300 getting some <a title="Image Settings" href="https://en.support.wordpress.com/images/image-settings/">caption</a> love.</figcaption></figure>
-<p>The image above happens to be <em><strong>centered</strong></em>. The caption also has a link in it, just to see if it does anything funky.</p>
-<figure id="attachment_904" aria-describedby="caption-attachment-904" style="width: 150px" class="wp-caption alignleft"><img loading="lazy" class="size-full wp-image-904  " title="Image Alignment 150x150" alt="Image Alignment 150x150" src="http://dev.starchenkov.pro/wp-content/uploads/2013/03/image-alignment-150x150-1.jpg" width="150" height="150"><figcaption id="caption-attachment-904" class="wp-caption-text">Bigger caption than the image usually is.</figcaption></figure>
-<p>The rest of this paragraph is filler for the sake of seeing the text wrap around the 150×150 image, which is <em><strong>left aligned</strong></em>.</p>
-<p>As you can see the should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we’ll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it’s thang. Mission accomplished!</p>
-<p>And now for a <em><strong>massively large image</strong></em>. It also has <em><strong>no alignment</strong></em>.</p>
-<figure id="attachment_907" aria-describedby="caption-attachment-907" style="width: 1200px" class="wp-caption alignnone"><img loading="lazy" class=" wp-image-907" title="Image Alignment 1200x400" alt="Image Alignment 1200x400" src="http://dev.starchenkov.pro/wp-content/uploads/2013/03/image-alignment-1200x4002-1.jpg" width="1200" height="400"><figcaption id="caption-attachment-907" class="wp-caption-text">Comment for massive image for your eyeballs.</figcaption></figure>
-<p>The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.</p>
-<figure id="attachment_907" aria-describedby="caption-attachment-907" style="width: 1200px" class="wp-caption aligncenter"><img loading="lazy" class=" wp-image-907" title="Image Alignment 1200x400" alt="Image Alignment 1200x400" src="http://dev.starchenkov.pro/wp-content/uploads/2013/03/image-alignment-1200x4002-1.jpg" width="1200" height="400"><figcaption id="caption-attachment-907" class="wp-caption-text">This massive image is centered.</figcaption></figure>
-<p>And again with the big image centered. The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.</p>
-<figure id="attachment_905" aria-describedby="caption-attachment-905" style="width: 300px" class="wp-caption alignright"><img loading="lazy" class="size-full wp-image-905 " title="Image Alignment 300x200" alt="Image Alignment 300x200" src="http://dev.starchenkov.pro/wp-content/uploads/2013/03/image-alignment-300x200-1.jpg" width="300" height="200"><figcaption id="caption-attachment-905" class="wp-caption-text">Feels good to be right all the time.</figcaption></figure>
-<p>And now we’re going to shift things to the <em><strong>right align</strong></em>. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there… Hey guy! Way to rock that right side. I don’t care what the left aligned image says, you look great. Don’t let anyone else tell you differently.</p>
-<p>In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah… Just like that. It never felt so good to be right.</p>
-<p>And that’s a wrap, yo! You survived the tumultuous waters of alignment. Image alignment achievement unlocked! Last thing is a small image aligned right. Whatever follows should be unaffected. <img loading="lazy" class="size-full wp-image-904 alignright" title="Image Alignment 150x150" alt="Image Alignment 150x150" src="http://dev.starchenkov.pro/wp-content/uploads/2013/03/image-alignment-150x150-1.jpg" width="150" height="150"></p>
-<div class="entry-links"></div>
-</section>
-</article>
-</main>
-
-<aside class="main-sidebar" role="complementary">
-	<div class="primary">
-		<ul class="sidebar-widget-list">
-			<li id="block-2" class="widget-container widget_block widget_search">
-				<form role="search" method="get" action="http://dev.starchenkov.pro/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label for="wp-block-search__input-1" class="wp-block-search__label">Поиск</label>
-					<div class="wp-block-search__inside-wrapper"><input type="search" id="wp-block-search__input-1" class="wp-block-search__input" name="s" value="" placeholder="Текст…" required=""><button type="submit" class="wp-block-search__button ">Искать</button></div>
-				</form>
-			</li>
-			<li id="block-3" class="widget-container widget_block">
-				<div class="wp-block-buttons">
-					<div class="wp-block-button"><a class="wp-block-button__link">Какая-то кнопка</a></div>
-				</div>
-			</li>
-		</ul>
-	</div>
-</aside>
-
-
-</div>
-<footer class="main-footer">
-	<nav class="main-footer__menu" role="navigation">
-	<div class="menu-secondary-menu-container">
-		<ul id="menu-secondary-menu" class="menu">
-			<li id="menu-item-2043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2043"><a href="http://dev.starchenkov.pro/">Aut porro et tempora</a></li>
-			<li id="menu-item-2041" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2041"><a href="http://dev.starchenkov.pro/no-category/">Без рубрики</a></li>
-			<li id="menu-item-2042" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2042"><a href="http://dev.starchenkov.pro/standart/">Стандарт</a></li>
-		</ul>
-	</div>
-</nav>
-
-	<div class="main-footer__copyright">
-© 2021 Starchenkov Dev</div>
-</footer>
-
-<!-- Сетка для контроля вёрстки: -->
-<style>
-.show-grid::before {
-	--grid-color: #ff00001c;
-}
-#grid-btn {
-	position: fixed;
-	right: 12px;
-	bottom: 12px;
-	padding: 2px 4px;
-	background: #00000047;
-	color: #fff;
-	font-size: 12px;
-	cursor: pointer;
-	user-select: none;
-}
-#grid-btn:hover {
-	background: #red;
-}
-.show-grid .main-header {
-	background: #0000001f;
-}
-.show-grid .main-footer {
-	background: #0000001f;
-}
-.show-grid section>* {
-	background: #0000001f;
-}
-.show-grid:before {
-	position: fixed;
-	max-width: var(--page-width);
-	margin: 0 auto;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	content: '';
-	pointer-events: none;
-	--grid-column-width: calc((100% - var(--grid-gutter) * var(--grid-columns)) / var(--grid-columns));
-	border: solid transparent;
-	border-width: 0 calc(var(--grid-sides) - var(--grid-gutter) / 2);
-	background-image: repeating-linear-gradient(to right,
-		transparent 0,
-		transparent calc(var(--grid-gutter) / 2),
-		var(--grid-color) calc(var(--grid-gutter) / 2),
-		var(--grid-color) calc(var(--grid-column-width) + var(--grid-gutter) / 2),
-		transparent calc(var(--grid-column-width) + var(--grid-gutter) / 2),
-		transparent calc(var(--grid-column-width) + var(--grid-gutter)));
-	background-repeat: no-repeat;
-}
-</style>
-<script>
-	const bodyGrid = document.querySelector("body.main-body");
-	function showGrid(){bodyGrid.classList.toggle("show-grid")}
-</script>
-<div id="grid-btn" onclick="showGrid()">GRID</div>
-
-<script src="js/jquery-1.12.4.js"></script>
-<script src="js/script.js"></script>
-
-</body>
+		<script src="js/jquery-1.12.4.js"></script>
+		<script src="js/script.js"></script>
+	</body>
 </html>

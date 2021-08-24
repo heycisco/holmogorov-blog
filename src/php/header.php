@@ -6,9 +6,8 @@
 </head>
 <body class="heycisco-proj main-body" <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header class="main-header" role="banner">
+<header class="main-header">
 <?php get_template_part( 'inc/branding' ); ?>
 <?php get_template_part( 'inc/menu-main' ); ?>
-<?php get_search_form(); ?>
+<?php get_template_part( 'inc/copyright' ); ?>
 </header>
-<div class="main-block wrapper">

@@ -1,36 +1,25 @@
 :root {
-
-
-// Цвета
-	--color-text: #333;
-	--color-bg: #eee;
-	--color-light: #0000000d;
-	--color-link: #147cb8;
-	--color-quote: #808080;
-	--color-table-borders: #00000033;
-
 // Макет
 	// Глобальный корректор значений
 	--c: 1;
 	// Ограничение ширины страницы
 	--page-width: unset;
+	// Ограничение ширины контента
+	--content-width: 960px;
 	// Отступ контента
 	--content-indents: calc(48px * var(--c));
 	// Количество колонок
 	--grid-columns: 12;
 	// Отступы от края экрана
-	--grid-sides: calc(32px * var(--c));
+	--grid-sides: 0;
 	// Отступы между колонками и по бокам секций
-	--grid-gutter: calc(12px * var(--c));
-	// Подсчет размера колонок
-	--grid-column-width: calc((100vw - var(--grid-gutter) * var(--grid-columns)) / var(--grid-columns));
+	--grid-gutter: calc(16px * var(--c));
 	// Отступы сверху/снизу секций
-	--section-padding: var(--grid-gutter);
-	// Ограничение ширины контента
-	--content-width: calc(100% + var(--grid-gutter) - ((var(--grid-gutter)  + var(--grid-column-width)) * 2)); // Ширина контента -2 колонки
-	// --content-width: unset; // Нефиксированный размер контента
-	--aside-width: unset; // Ширина сайдбара
+	--section-padding: calc(48px * var(--c));
 
+	--el-indents: calc(12px * var(--c));
+	--main-block-width: 680px;
+	--staple-size: 1;
 
 // Адаптивность
 	@media (max-width: 1024px) {
@@ -40,10 +29,21 @@
 	@media (max-width: 760px) {
 		--c: 0.6;
 		--grid-columns: 4;
-		--content-width: 100%;
 	}
 }
 
-// SCSS переменные
 
+
+// SCSS переменные
+$bg: rgb(221, 221, 221);
+$bg-gradient: radial-gradient(circle, rgba(221, 221, 221, 1) 25%, rgba(204, 204, 204, 1) 100%);
+$text: #4d4d4d;
+$gray-1: #999999;
+$light: #b3b3b3;
+$white: #ffffff;
+$orange: #f15a24;
+$header-bg: #4f4f4f;
+$white-transparent: #ffffff70;
 $font: OpenSans-Regular, sans-serif;
+$tansition-out: 0.4s ease-in;
+$tansition-in: 0.15s ease-in;

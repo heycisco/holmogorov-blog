@@ -1,3 +1,7 @@
-<div class="main-footer__copyright">
-&copy; <?php echo esc_html( date_i18n( __( 'Y', 'starchenkov-dev' ) ) ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+<div class="copyright">
+	<span>© Валентин Холмогоров.</span>
+	<span
+		>Перепечатка материалов и статей допускается только с указанием
+		авторства и ссылкой на сайт holmogorov.ru</span
+	>
 </div>
