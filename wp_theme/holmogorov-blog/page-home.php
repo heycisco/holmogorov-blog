@@ -9,7 +9,7 @@ Template Name: Домашнаяя страница
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 
-	<section class="category-list__content">
+	<section class="category-list__content content">
 <?php
 // Настройка вывода категорий
 $categories = get_categories(array(
