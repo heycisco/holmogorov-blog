@@ -1213,6 +1213,7 @@ a:active {
   font-size: 3rem;
   border-bottom: 4px solid #f15a24;
   margin-bottom: 1em;
+  width: 100%;
 }
 
 .heycisco-proj .content h1,

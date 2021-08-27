@@ -19,16 +19,17 @@
 	</div>
 	<?php endif; ?>
 
-	<div class="category__header__meta">
 
 <!-- Описание категории -->
 	<?php if ( get_the_archive_description() ) : ?>
+	<div class="category__header__meta">
 		<div class="description">
 		<?php echo get_the_archive_description(); ?>
 		</div>
+	</div>
 	<?php endif; ?>
 
-	</div>
+
 </header>
 
 <section class="category__posts">
