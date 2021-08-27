@@ -60,6 +60,9 @@ function postTitleSize() {
 			"padding-top":
 				"calc((var(--section-padding) * 2) + " + postTitleHeight + "px)",
 		});
+		alert('< 720');
+	} else {
+		alert('> 720');
 	}
 }
 
