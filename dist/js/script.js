@@ -48,7 +48,7 @@ function randomArticlePrev() {
 
 // Автоподгонка размера заголовка поста
 function postTitleSize() {
-	if ($(window).width() < 720) {
+	if ($(window).width() < 960) {
 		let postBrandingHeight = $(headerBranding).height();
 		$(singlePostHeader).css({
 			"min-height":
@@ -60,9 +60,6 @@ function postTitleSize() {
 			"padding-top":
 				"calc((var(--section-padding) * 2) + " + postTitleHeight + "px)",
 		});
-		alert('< 720');
-	} else {
-		alert('> 720');
 	}
 }
 
