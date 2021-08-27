@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		@@include('__header-meta.html')
+		<title>Project</title>
+	</head>
 
-<head>
-	@@include('__header-meta.html')
-	<title>Project</title>
-</head>
-
-<body class="heycisco-proj main-body">
-
-<header class="main-header">
-	@@include('__branding.html')
-	@@include('../components/__menu.html')
-	@@include('__copyright.html')
-</header>
+	<body class="heycisco-proj main-body">
+		<div id="mobile_menu_toggle">
+			<button class="up">
+				<span>@@include('../icons/chevron-up-solid.html')</span>
+			</button>
+			<h2>Holmogorov.ru</h2>
+			<button class="menu-toggle">
+				<span class="closed">@@include('../icons/bars-solid.html')</span>
+				<span class="open">@@include('../icons/times-solid.html')</span>
+			</button>
+		</div>
+		<header class="main-header">
+			@@include('__branding.html') @@include('../components/__menu.html')
+			@@include('__copyright.html')
+		</header>

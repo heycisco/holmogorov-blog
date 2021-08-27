@@ -94,6 +94,9 @@
 		// padding: 0 0.2em;
 		margin-top: var(--section-padding);
 		padding: 4em 0;
+		@media (max-width: 720px) {
+			padding: 6em 0;
+		}
 		width: 100%;
 		@include font-extra;
 		font-size: 0.9em;

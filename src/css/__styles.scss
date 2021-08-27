@@ -22,6 +22,12 @@
 			}
 		}
 	}
+	@media (max-width: 720px) {
+		padding: 0;
+		&.category {
+			padding: 1.5rem;
+		}
+	}
 }
 
 .post-nav {
@@ -97,6 +103,9 @@
 	position: relative;
 	top: 0.4em;
 	width: fit-content;
+	@media (max-width: 720px) {
+		display: none;
+	}
 
 	// &:before, &:after {
 	// 	content: "";
@@ -287,4 +296,10 @@ input[type="submit"] {
 			}
 		}
 	}
+}
+
+@media (max-width: 720px) {
+		.page .content {
+			padding: 0 1.5rem;
+		}
 }

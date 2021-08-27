@@ -34,4 +34,10 @@
 			width: 100%;
 		}
 	}
+	
+	@media (max-width: 720px) {
+		section.category__posts {
+			padding: 0 1.5rem;
+		}
+	}
 }

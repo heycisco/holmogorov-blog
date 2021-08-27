@@ -2,6 +2,12 @@
 	@include font-extra;
 	text-transform: uppercase;
 	color: $text;
+	@media (max-width: 720px) {
+		justify-content: center;
+		flex-direction: column;
+		align-items: stretch;
+		height: 100%;
+	}
 
 	> * {
 		width: 100%;
@@ -24,6 +30,9 @@
 			@media (max-width: 960px) {
 				display: none;
 			}
+			@media (max-width: 720px) {
+				display: block;
+			}
 		}
 	}
 
@@ -38,6 +47,9 @@
 			}
 			@media (max-width: 960px) {
 				font: 1.5rem sans-serif;
+			}
+			@media (max-width: 720px) {
+				font-size: 2.15rem;
 			}
 			line-height: 1.2;
 			@include font-extra;
@@ -89,6 +101,11 @@
 			text-align: right;
 			margin-top: -1em;
 		}
+		@media (max-width: 720px) {
+			min-width: 100%;
+			margin-left: 0;
+			margin-top: 0;
+		}
 	}
 
 	.main-nav {
@@ -99,6 +116,11 @@
 		@media (max-width: 1140px) {
 			font-size: 1.3rem;
 		}
+		@media (max-width: 720px) {
+			font-size: 1.8rem;
+			flex: 1 1 auto;
+			margin-top: 2em;
+		}
 		line-height: 1;
 		.menu-toggle {
 			display: none;
@@ -108,6 +130,12 @@
 				display: flex;
 				li {
 					margin-right: 0.5em;
+				}
+			}
+			@media (max-width: 720px) {
+				flex-direction: column;
+				li {
+					margin-left: unset;
 				}
 			}
 
@@ -149,6 +177,9 @@
 				&.menu-item-has-children {
 					@media (max-width: 960px) {
 						margin-right: 1.5em;
+					}
+					@media (max-width: 720px) {
+						margin-right: unset;
 					}
 					ul {
 						position: relative;
@@ -224,6 +255,10 @@
 }
 
 .main-aside {
+	@media (max-width: 720px) {
+		z-index: 10;
+		padding-right: var(--section-padding);
+	}
 	.social {
 		display: flex;
 		flex-direction: column;
@@ -310,5 +345,51 @@
 				}
 			}
 		}
+	}
+}
+#mobile_menu_toggle {
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+	background: $header-bg;
+	color: $light;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+	@include font-extra;
+	button {
+		flex: 0 0 auto;
+		padding: 0;
+		margin: 0;
+		span {
+			width: 46px;
+			height: 46px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 15px;
+			svg {
+				width: 100%;
+			}
+			&.open {
+				display: none;
+			}
+		}
+	}
+	h2 {
+		padding: 0.25em 0.5em;
+		flex: 1 1 auto;
+	}
+}
+@media (max-width: 720px) {
+	#mobile_menu_toggle {
+		display: flex;
+	}
+	.main-header,
+	.main-aside {
+		opacity: 0;
+		pointer-events: none;
 	}
 }
