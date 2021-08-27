@@ -9,9 +9,9 @@ const singlePostHeader = $(".main-block.single-post .header");
 const singlePostWrapper = $(".main-block.single-post .wrapper");; // тут переменные
 	// Отключение действий при нажатии на кнопки
 function preventDefault() {
-	// $('.menu-item-has-children a[href=#]').on("click", function (event) {
-	// 	event.preventDefault();
-	// });
+	$('.menu-item-has-children a[href=#]').on("click", function (event) {
+		event.preventDefault();
+	});
 	$('button').on("click", function (event) {
 		event.preventDefault();
 	});
