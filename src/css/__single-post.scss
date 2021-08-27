@@ -82,6 +82,9 @@
 		.wrapper {
 			padding-top: 210px;
 			margin: 0 1em;
+			@media (max-width: 720px) {
+				padding-top: unset;
+			}
 		}
 
 		.post-content {

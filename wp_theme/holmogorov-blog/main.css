@@ -1098,6 +1098,12 @@ a:active {
   margin: 0 1em;
 }
 
+@media (max-width: 720px) {
+  .heycisco-proj .main-block.single-post article .wrapper {
+    padding-top: unset;
+  }
+}
+
 .heycisco-proj .main-block.single-post article .post-content {
   color: #000;
 }
