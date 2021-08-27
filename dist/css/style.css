@@ -909,6 +909,64 @@ a:active {
   flex-direction: row;
 }
 
+.heycisco-proj .homepage section.category-list__content.content article {
+  background: #4f4f4f;
+  color: #b3b3b3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 20em;
+}
+
+.heycisco-proj .homepage section.category-list__content.content article .image-wrapper {
+  flex: 1 0 70%;
+  object-fit: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.heycisco-proj .homepage section.category-list__content.content article .image-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease-in;
+}
+
+.heycisco-proj .homepage section.category-list__content.content article .content-wrapper {
+  flex: 1 0 30%;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.heycisco-proj .homepage section.category-list__content.content article .content-wrapper .title {
+  flex: 0 0 auto;
+  font-size: 1.3em;
+}
+
+.heycisco-proj .homepage section.category-list__content.content article .content-wrapper .description {
+  flex: 0 0 auto;
+  font-size: 0.95em;
+}
+
+.heycisco-proj .homepage section.category-list__content.content article .content-wrapper .post-counter {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+  font-size: 0.8em;
+  justify-content: flex-end;
+  color: #999999;
+}
+
+.heycisco-proj .homepage section.category-list__content.content article:hover .image-wrapper img {
+  transform: scale(1.05);
+  transition: transform 0.15s ease-in;
+}
+
 .heycisco-proj .main-block {
   padding: var(--section-padding) 0;
   padding-top: 0;
@@ -1083,4 +1141,105 @@ a:active {
 
 .heycisco-proj .post-nav.category .nav-links .nav-next svg {
   transform: rotate(90deg);
+}
+
+.heycisco-proj input,
+.heycisco-proj button,
+.heycisco-proj textarea {
+  padding: 0.5em 0.5em;
+  font-size: 1.2rem;
+}
+
+.heycisco-proj input,
+.heycisco-proj textarea {
+  background: #ffffff70;
+  color: #00000090;
+  border: 1px solid #999999;
+  width: 100%;
+  transition: all 0.4s ease-in;
+}
+
+.heycisco-proj input::placeholder,
+.heycisco-proj textarea::placeholder {
+  color: #b3b3b3;
+}
+
+.heycisco-proj input:focus,
+.heycisco-proj textarea:focus {
+  background: #ffffff;
+  color: #4d4d4d;
+  border: 1px solid #f15a24;
+  transition: all 0.15s ease-in;
+}
+
+.heycisco-proj button,
+.heycisco-proj input[type="submit"] {
+  padding: 0.5em 1em;
+  background: #00000090;
+  color: #ffffff70;
+  text-transform: uppercase;
+  font-family: OpenSans-Regular, sans-serif;
+  font-weight: 600;
+  border: 1px solid #0000;
+  width: auto;
+  transition: all 0.4s ease-in;
+}
+
+.heycisco-proj button:hover,
+.heycisco-proj input[type="submit"]:hover {
+  background: #f15a24;
+  color: #4d4d4d;
+  transition: all 0.15s ease-in;
+}
+
+.heycisco-proj .wpcf7-form {
+  margin: 2rem 0;
+}
+
+.heycisco-proj .wpcf7-form label {
+  font-size: 0.95rem;
+}
+
+.heycisco-proj .main-block.page .header {
+  border-bottom: 4px solid #f15a24;
+  margin-bottom: 1em;
+}
+
+.heycisco-proj .main-block.page .header .entry-title {
+  font-size: 3rem;
+}
+
+.heycisco-proj .main-block.homepage .entry-title {
+  font-size: 3rem;
+  border-bottom: 4px solid #f15a24;
+  margin-bottom: 1em;
+}
+
+.heycisco-proj .content h1,
+.heycisco-proj .content h2,
+.heycisco-proj .content h3,
+.heycisco-proj .content h4,
+.heycisco-proj .content h5,
+.heycisco-proj .content h6 {
+  margin-top: 0.85em;
+}
+
+.heycisco-proj .content figure {
+  margin-bottom: 0.85rem;
+}
+
+.heycisco-proj .content figure.aligncenter {
+  text-align: center;
+  width: 100%;
+}
+
+.heycisco-proj .content figure.size-full {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.heycisco-proj .content figure.size-full > * {
+  width: 100%;
 }

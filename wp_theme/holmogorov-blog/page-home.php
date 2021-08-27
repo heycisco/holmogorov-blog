@@ -9,12 +9,13 @@ Template Name: Домашнаяя страница
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 	<section>
-	<article>
+	<article class="content">
 	<?php the_content(); ?>
 	</article>
 	</section>
 
 	<section class="category-list__content content">
+		<h2 class="entry-title">Разделы</h2>
 <?php
 // Настройка вывода категорий
 $categories = get_categories(array(

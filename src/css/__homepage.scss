@@ -4,5 +4,60 @@
 	}
 	section.category-list__content.content {
 		flex-direction: row;
+		article {
+			background: $header-bg;
+			color: $light;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: stretch;
+			height: 20em;
+			.image-wrapper {
+				flex: 1 0 70%;
+				object-fit: none;
+				display: flex;
+				align-items: stretch;
+				justify-content: center;
+
+				img {
+					width: 100%;
+					height: auto;
+					transition: transform $tansition-out;
+				}
+			}
+			.content-wrapper {
+				flex: 1 0 30%;
+				padding: 0.5em;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: stretch;
+				align-content: stretch;
+				.title {
+					flex: 0 0 auto;
+					font-size: 1.3em;
+				}
+				.description {
+					flex: 0 0 auto;
+					font-size: 0.95em;
+				}
+				.post-counter {
+					flex: 1 1 auto;
+					display: flex;
+					align-items: flex-end;
+					font-size: 0.8em;
+					justify-content: flex-end;
+					color: $gray-1;
+				}
+			}
+			&:hover {
+				.image-wrapper {
+					img {
+						transform: scale(1.05);
+						transition: transform $tansition-in;
+					}
+				}
+			}
+		}
 	}
 }
