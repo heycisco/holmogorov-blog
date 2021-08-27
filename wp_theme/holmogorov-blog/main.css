@@ -1642,6 +1642,15 @@ a:active {
   font-size: 0.95rem;
 }
 
+@media (max-width: 720px) {
+  .heycisco-proj .page .content {
+    padding: 1.5rem;
+  }
+  .heycisco-proj .page .content h1.entry-title {
+    margin-top: 0;
+  }
+}
+
 .heycisco-proj .main-block.page .header {
   border-bottom: 4px solid #f15a24;
   margin-bottom: 1em;
@@ -1687,11 +1696,6 @@ a:active {
   width: 100%;
 }
 
-@media (max-width: 720px) {
-  .heycisco-proj .page .content {
-    padding: 1.5rem;
-  }
-  .heycisco-proj .page .content h1.entry-title {
-    margin-top: 0;
-  }
+.heycisco-proj .content p {
+  margin-bottom: 0.85em;
 }

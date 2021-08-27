@@ -254,7 +254,14 @@ input[type="submit"] {
 		font-size: 0.95rem;
 	}
 }
-
+@media (max-width: 720px) {
+	.page .content {
+		padding: 1.5rem;
+		h1.entry-title {
+			margin-top: 0;
+		}
+	}
+}
 .main-block.page {
 	.header {
 		.entry-title {
@@ -296,13 +303,8 @@ input[type="submit"] {
 			}
 		}
 	}
+	p {
+		margin-bottom: 0.85em;
+  }
 }
 
-@media (max-width: 720px) {
-		.page .content {
-			padding: 1.5rem;
-			h1.entry-title {
-				margin-top: 0;
-			}
-		}
-}
