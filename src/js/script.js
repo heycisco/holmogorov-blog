@@ -9,6 +9,7 @@ jQuery(function() {
 	menuChildDecktop(); // функционал вложенных меню
 	postTitleSize(); // автоустановка размера заголовка поста
 	scrollTop(); // плавная прокрутка к началу страницы
+	mobileMenuFunc(); // функционал мобильного меню
 
 	$(window).on('load', function() {
 // действия после загрузки:

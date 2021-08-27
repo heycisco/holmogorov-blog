@@ -1,10 +1,10 @@
 // Отключение действий при нажатии на кнопки
 function preventDefault() {
-	$(elToDisableActions).on("click", function (event) {
+	// $('.menu-item-has-children a[href=#]').on("click", function (event) {
+	// 	event.preventDefault();
+	// });
+	$('button').on("click", function (event) {
 		event.preventDefault();
-	});
-	$(".menu-item-has-children a[href=#]").click(function (e) {
-		e.preventDefault();
 	});
 }
 
@@ -93,5 +93,17 @@ function menuChildDecktop() {
 			$(this).parent().addClass("clicked");
 			$(this).parent().find("ul").show(300);
 		}
+	});
+}
+
+// Функционал мобильного меню
+function mobileMenuFunc() {
+	$("#mobile_menu_toggle .menu-toggle").click(function () { 
+		$("body").toggleClass("mobile-menu-open");
+	});
+	$("#mobile_menu_toggle .up").click(function () { 
+		$('body,html').animate({
+			scrollTop: 0
+	  }, 400);
 	});
 }

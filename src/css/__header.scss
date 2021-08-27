@@ -357,7 +357,8 @@
 	color: $light;
 	justify-content: space-between;
 	align-items: center;
-	z-index: 10;
+	z-index: 50;
+	pointer-events: none;
 	@include font-extra;
 	button {
 		flex: 0 0 auto;
@@ -376,6 +377,9 @@
 			&.open {
 				display: none;
 			}
+			&.closed {
+				display: flex;
+			}
 		}
 	}
 	h2 {
@@ -386,10 +390,42 @@
 @media (max-width: 720px) {
 	#mobile_menu_toggle {
 		display: flex;
+		pointer-events: auto;
 	}
 	.main-header,
 	.main-aside {
+		padding-top: 80px;
 		opacity: 0;
 		pointer-events: none;
+		transition: opacity $tansition-in;
+	}
+}
+
+
+&.mobile-menu-open {
+	@media (max-width: 720px) {
+	overflow: hidden;
+		#mobile_menu_toggle {
+			button {
+				span {
+					&.open {
+						display: flex;
+					}
+					&.closed {
+						display: none;
+					}
+				}
+				&.up {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+		}
+		.main-header,
+		.main-aside {
+			opacity: 1;
+			pointer-events: auto;
+			transition: opacity $tansition-in;
+		}
 	}
 }

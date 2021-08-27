@@ -1,21 +1,19 @@
 jQuery.noConflict();
 jQuery(function() {
-	const elToDisableActions = jQuery("button");
-const articlePrev = jQuery(".article-prev");
+	const articlePrev = jQuery(".article-prev");
 const articlePrevPic = jQuery(".article-prev .picture");
 const articleStaple = jQuery(".article-prev .staple-content");
 const scrollTopBtn = jQuery(".btn-to-top");
 const headerBranding = jQuery(".main-header .branding");
 const singlePostHeader = jQuery(".main-block.single-post .header");
-const singlePostWrapper = jQuery(".main-block.single-post .wrapper");
-; // тут переменные
+const singlePostWrapper = jQuery(".main-block.single-post .wrapper");; // тут переменные
 	// Отключение действий при нажатии на кнопки
 function preventDefault() {
-	jQuery(elToDisableActions).on("click", function (event) {
+	// jQuery('.menu-item-has-children a[href=#]').on("click", function (event) {
+	// 	event.preventDefault();
+	// });
+	jQuery('button').on("click", function (event) {
 		event.preventDefault();
-	});
-	jQuery(".menu-item-has-children a[href=#]").click(function (e) {
-		e.preventDefault();
 	});
 }
 
@@ -106,6 +104,18 @@ function menuChildDecktop() {
 		}
 	});
 }
+
+// Функционал мобильного меню
+function mobileMenuFunc() {
+	jQuery("#mobile_menu_toggle .menu-toggle").click(function () { 
+		jQuery("body").toggleClass("mobile-menu-open");
+	});
+	jQuery("#mobile_menu_toggle .up").click(function () { 
+		jQuery('body,html').animate({
+			scrollTop: 0
+	  }, 400);
+	});
+}
 ; // все функции
 
 
@@ -114,6 +124,7 @@ function menuChildDecktop() {
 	menuChildDecktop(); // функционал вложенных меню
 	postTitleSize(); // автоустановка размера заголовка поста
 	scrollTop(); // плавная прокрутка к началу страницы
+	mobileMenuFunc(); // функционал мобильного меню
 
 	jQuery(window).on('load', function() {
 // действия после загрузки:
