@@ -1,5 +1,5 @@
 .main-block.single-post {
-	padding: var(--section-padding) 0;
+	padding: var(--section-padding) 1.5rem;
 	padding-top: 0;
 	min-height: 100%;
 	justify-content: space-between;
@@ -28,6 +28,14 @@
 			flex-direction: column;
 			justify-content: space-between;
 			box-shadow: 0 15px 15px #d4d4d4;
+			@media (max-width: 960px) {
+				position: relative;
+				background: none;
+				color: $text;
+				box-shadow: none;
+				padding-left: 0;
+				padding-right: 0;
+			}
 
 			.hwrapper {
 				max-width: var(--main-block-width);
@@ -44,11 +52,17 @@
 			.post-meta {
 				color: $white-transparent;
 				font-size: 0.85rem;
+				@media (max-width: 960px) {
+					color: $black-transparent;
+				}
 
 				.tags {
 					a {
 						margin-right: 0.5em;
 						color: $white-transparent;
+						@media (max-width: 960px) {
+							color: $black-transparent;
+						}
 						transition: color $tansition-out;
 
 						border-bottom: 1px dotted;
@@ -56,6 +70,9 @@
 						&:hover {
 							color: $white;
 							transition: color $tansition-in;
+							@media (max-width: 960px) {
+								color: #000;
+							}
 						}
 					}
 				}

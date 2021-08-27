@@ -6,6 +6,9 @@
 	> * {
 		width: 100%;
 		position: relative;
+		@media (max-width: 960px) {
+			width: auto;
+		}
 	}
 
 	.branding h1,
@@ -18,17 +21,32 @@
 			background: $gray-1;
 			height: 4px;
 			width: calc(var(--section-padding) - var(--el-indents));
+			@media (max-width: 960px) {
+				display: none;
+			}
 		}
 	}
 
 	.branding {
 		h1 {
 			font-size: 2.15rem;
+			@media (max-width: 1350px) {
+				font-size: 1.8rem;
+			}
+			@media (max-width: 1100px) {
+				font-size: 1.65rem;
+			}
+			@media (max-width: 960px) {
+				font: 1.5rem sans-serif;
+			}
 			line-height: 1.2;
 			@include font-extra;
 
 			&:before {
 				top: calc((2.45rem / 2) - 2px);
+				@media (max-width: 1350px) {
+					top: calc((1.8rem / 2) - 2px);
+				}
 				pointer-events: none;
 			}
 		}
@@ -65,20 +83,42 @@
 				font-weight: 600;
 			}
 		}
+		@media (max-width: 960px) {
+			min-width: 450px;
+			margin-left: calc(100% - 450px);
+			text-align: right;
+			margin-top: -1em;
+		}
 	}
 
 	.main-nav {
 		font-size: 1.8rem;
+		@media (max-width: 1350px) {
+			font-size: 1.6rem;
+		}
+		@media (max-width: 1140px) {
+			font-size: 1.3rem;
+		}
 		line-height: 1;
 		.menu-toggle {
 			display: none;
 		}
-		ul {
+		ul.menu {
+			@media (max-width: 960px) {
+				display: flex;
+				li {
+					margin-right: 0.5em;
+				}
+			}
+
 			li {
 				position: relative;
 
 				a {
 					padding: 18px 0;
+					@media (max-width: 1350px) {
+						padding: 15px 0;
+					}
 					color: inherit;
 					position: relative;
 					display: inline-block;
@@ -107,6 +147,9 @@
 				}
 
 				&.menu-item-has-children {
+					@media (max-width: 960px) {
+						margin-right: 1.5em;
+					}
 					ul {
 						position: relative;
 						top: -9px;
@@ -141,7 +184,7 @@
 					> a {
 						span {
 							position: absolute;
-							top: 18px;
+							top: 0.85;
 							right: -1em;
 							transform: rotate(0);
 							transform-origin: 0.4em 0.4em;

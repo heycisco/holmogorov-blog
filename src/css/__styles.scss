@@ -11,6 +11,17 @@
 		flex: 1 1 auto;
 		margin: 3em 0;
 	}
+	@media (max-width: 960px) {
+		padding: 1em var(--section-padding);
+		section {
+			margin: 0;
+		}
+		&.category {
+			section {
+				margin-bottom: 3em;
+			}
+		}
+	}
 }
 
 .post-nav {
