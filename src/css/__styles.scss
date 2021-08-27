@@ -309,5 +309,8 @@ input[type="submit"] {
 	ul {
 		margin-bottom: 0.85em;
 	}
+	.wp-block-image.is-style-rounded img {
+		border-radius: 3em;
+	}
 }
 
