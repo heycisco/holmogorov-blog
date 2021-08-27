@@ -18,4 +18,7 @@
 	@import "__random-background.scss";
 	@import "__homepage.scss";
 	@import "__styles.scss";
+	.single-post .post-content {
+		@import "__content-user.scss";
+	}
 }
