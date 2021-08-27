@@ -9,9 +9,9 @@ const singlePostHeader = jQuery(".main-block.single-post .header");
 const singlePostWrapper = jQuery(".main-block.single-post .wrapper");; // тут переменные
 	// Отключение действий при нажатии на кнопки
 function preventDefault() {
-	// jQuery('.menu-item-has-children a[href=#]').on("click", function (event) {
-	// 	event.preventDefault();
-	// });
+	jQuery('.menu-item-has-children a[href=#]').on("click", function (event) {
+		event.preventDefault();
+	});
 	jQuery('button').on("click", function (event) {
 		event.preventDefault();
 	});
