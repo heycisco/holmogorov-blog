@@ -689,6 +689,11 @@ a:active {
     pointer-events: none;
     transition: opacity 0.15s ease-in;
   }
+  .heycisco-proj .main-header .social,
+  .heycisco-proj .main-aside .social {
+    justify-content: flex-start;
+    margin-top: 120px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1657,6 +1662,6 @@ a:active {
 
 @media (max-width: 720px) {
   .heycisco-proj .page .content {
-    padding: 0 1.5rem;
+    padding: 1.5rem;
   }
 }
