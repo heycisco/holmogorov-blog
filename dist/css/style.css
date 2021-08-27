@@ -623,6 +623,46 @@ a:active {
   height: 100%;
 }
 
+.heycisco-proj .category__header {
+  position: relative;
+}
+
+.heycisco-proj .category__header__title {
+  position: absolute;
+  font-size: 3em;
+  color: #4f4f4f;
+  top: 0;
+  left: 50%;
+  text-align: center;
+  padding: 0.25em 0.5rem;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heycisco-proj .category__header__image {
+  max-height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heycisco-proj .category__header__image img {
+  width: 100%;
+  opacity: 0.5;
+  filter: blur(3px);
+}
+
+.heycisco-proj .category__header__meta {
+  position: absolute;
+  bottom: 0;
+  background: #4f4f4f;
+  padding: 0.25em 1rem;
+  color: #ffffff70;
+  width: 100%;
+}
+
 .heycisco-proj .main-block.single-post {
   padding: var(--section-padding) 0;
   padding-top: 0;

@@ -1,5 +1,5 @@
 :root {
-// Макет
+	// Макет
 	// Глобальный корректор значений
 	--c: 1;
 	// Ограничение ширины страницы
@@ -21,7 +21,7 @@
 	--main-block-width: 680px;
 	--staple-size: 1;
 
-// Адаптивность
+	// Адаптивность
 	@media (max-width: 1024px) {
 		--c: 0.85;
 		--grid-columns: 8;
@@ -32,11 +32,13 @@
 	}
 }
 
-
-
 // SCSS переменные
 $bg: rgb(221, 221, 221);
-$bg-gradient: radial-gradient(circle, rgba(221, 221, 221, 1) 25%, rgba(204, 204, 204, 1) 100%);
+$bg-gradient: radial-gradient(
+	circle,
+	rgba(221, 221, 221, 1) 25%,
+	rgba(204, 204, 204, 1) 100%
+);
 $text: #4d4d4d;
 $gray-1: #999999;
 $light: #b3b3b3;
@@ -44,6 +46,7 @@ $white: #ffffff;
 $orange: #f15a24;
 $header-bg: #4f4f4f;
 $white-transparent: #ffffff70;
+$black-transparent: #00000090;
 $font: OpenSans-Regular, sans-serif;
 $tansition-out: 0.4s ease-in;
 $tansition-in: 0.15s ease-in;
