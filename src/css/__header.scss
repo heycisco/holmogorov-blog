@@ -353,7 +353,7 @@
 	top: 0;
 	width: 100%;
 	left: 0;
-	background: $header-bg;
+	background: #000;
 	color: $light;
 	justify-content: space-between;
 	align-items: center;
@@ -364,6 +364,12 @@
 		flex: 0 0 auto;
 		padding: 0;
 		margin: 0;
+		background: $black-transparent;
+		color: $light;
+		&:hover {
+			background: $black-transparent;
+			color: $light;
+		}
 		span {
 			width: 46px;
 			height: 46px;
@@ -381,6 +387,10 @@
 				display: flex;
 			}
 		}
+		&.up {
+			opacity: 0;
+			pointer-events: none;
+		}
 	}
 	h2 {
 		padding: 0.25em 0.5em;
@@ -391,6 +401,11 @@
 	#mobile_menu_toggle {
 		display: flex;
 		pointer-events: auto;
+		
+	&.scroll button.up {
+			opacity: 1;
+			pointer-events: auto;
+		}
 	}
 	.main-header,
 	.main-aside {
@@ -410,6 +425,10 @@
 	@media (max-width: 720px) {
 	overflow: hidden;
 		#mobile_menu_toggle {
+			background: #0000;
+			h2 {
+				opacity: 0;
+			}
 			button {
 				span {
 					&.open {
@@ -420,8 +439,7 @@
 					}
 				}
 				&.up {
-					opacity: 0;
-					pointer-events: none;
+					display: none;
 				}
 			}
 		}

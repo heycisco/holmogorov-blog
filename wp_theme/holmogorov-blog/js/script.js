@@ -9,9 +9,9 @@ const singlePostHeader = jQuery(".main-block.single-post .header");
 const singlePostWrapper = jQuery(".main-block.single-post .wrapper");; // тут переменные
 	// Отключение действий при нажатии на кнопки
 function preventDefault() {
-	jQuery('.menu-item-has-children a[href=#]').on("click", function (event) {
-		event.preventDefault();
-	});
+	// jQuery('.menu-item-has-children a[href=#]').on("click", function (event) {
+	// 	event.preventDefault();
+	// });
 	jQuery('button').on("click", function (event) {
 		event.preventDefault();
 	});
@@ -112,13 +112,21 @@ function mobileMenuFunc() {
 	jQuery("#mobile_menu_toggle .menu-toggle").click(function () { 
 		jQuery("body").toggleClass("mobile-menu-open");
 	});
-	jQuery("#mobile_menu_toggle .up").click(function () { 
-		jQuery('body,html').animate({
-			scrollTop: 0
-	  }, 400);
-	});
+		jQuery("#mobile_menu_toggle .up").click(function () { 
+			jQuery('body,html').animate({
+				scrollTop: 0
+		  }, 400);
+		});
 }
-; // все функции
+
+function scrollTop() {
+	if(window.pageYOffset>300){
+		jQuery("#mobile_menu_toggle").addClass("scroll");
+	} else{
+		jQuery("#mobile_menu_toggle").removeClass("scroll");
+	}
+}
+window.onscroll=scrollTop; // все функции
 
 
 // действия:

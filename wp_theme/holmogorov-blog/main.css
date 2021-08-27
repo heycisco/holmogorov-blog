@@ -634,7 +634,7 @@ a:active {
   top: 0;
   width: 100%;
   left: 0;
-  background: #4f4f4f;
+  background: #000;
   color: #b3b3b3;
   justify-content: space-between;
   align-items: center;
@@ -649,6 +649,13 @@ a:active {
   flex: 0 0 auto;
   padding: 0;
   margin: 0;
+  background: #00000090;
+  color: #b3b3b3;
+}
+
+.heycisco-proj #mobile_menu_toggle button:hover {
+  background: #00000090;
+  color: #b3b3b3;
 }
 
 .heycisco-proj #mobile_menu_toggle button span {
@@ -672,6 +679,11 @@ a:active {
   display: flex;
 }
 
+.heycisco-proj #mobile_menu_toggle button.up {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .heycisco-proj #mobile_menu_toggle h2 {
   padding: 0.25em 0.5em;
   flex: 1 1 auto;
@@ -680,6 +692,10 @@ a:active {
 @media (max-width: 720px) {
   .heycisco-proj #mobile_menu_toggle {
     display: flex;
+    pointer-events: auto;
+  }
+  .heycisco-proj #mobile_menu_toggle.scroll button.up {
+    opacity: 1;
     pointer-events: auto;
   }
   .heycisco-proj .main-header,
@@ -700,6 +716,12 @@ a:active {
   .heycisco-proj.mobile-menu-open {
     overflow: hidden;
   }
+  .heycisco-proj.mobile-menu-open #mobile_menu_toggle {
+    background: #0000;
+  }
+  .heycisco-proj.mobile-menu-open #mobile_menu_toggle h2 {
+    opacity: 0;
+  }
   .heycisco-proj.mobile-menu-open #mobile_menu_toggle button span.open {
     display: flex;
   }
@@ -707,8 +729,7 @@ a:active {
     display: none;
   }
   .heycisco-proj.mobile-menu-open #mobile_menu_toggle button.up {
-    opacity: 0;
-    pointer-events: none;
+    display: none;
   }
   .heycisco-proj.mobile-menu-open .main-header,
   .heycisco-proj.mobile-menu-open .main-aside {
