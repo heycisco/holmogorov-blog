@@ -154,3 +154,13 @@ video {
 		text-align: center;
   }
 }
+.wp-block-image.is-style-rounded img {
+	border-radius: 3em;
+}
+.book {
+	width: 100%;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
