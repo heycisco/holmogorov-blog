@@ -1664,4 +1664,7 @@ a:active {
   .heycisco-proj .page .content {
     padding: 1.5rem;
   }
+  .heycisco-proj .page .content h1.entry-title {
+    margin-top: 0;
+  }
 }

@@ -301,5 +301,8 @@ input[type="submit"] {
 @media (max-width: 720px) {
 		.page .content {
 			padding: 1.5rem;
+			h1.entry-title {
+				margin-top: 0;
+			}
 		}
 }

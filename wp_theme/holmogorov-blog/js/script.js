@@ -48,17 +48,19 @@ function randomArticlePrev() {
 
 // Автоподгонка размера заголовка поста
 function postTitleSize() {
-	let postBrandingHeight = jQuery(headerBranding).height();
-	jQuery(singlePostHeader).css({
-		"min-height":
-			"calc(" + postBrandingHeight + "px + (var(--section-padding))",
-	});
+	if (jQuery(window).width() < 720) {
+		let postBrandingHeight = jQuery(headerBranding).height();
+		jQuery(singlePostHeader).css({
+			"min-height":
+				"calc(" + postBrandingHeight + "px + (var(--section-padding))",
+		});
 
-	let postTitleHeight = jQuery(singlePostHeader).height();
-	jQuery(singlePostWrapper).css({
-		"padding-top":
-			"calc((var(--section-padding) * 2) + " + postTitleHeight + "px)",
-	});
+		let postTitleHeight = jQuery(singlePostHeader).height();
+		jQuery(singlePostWrapper).css({
+			"padding-top":
+				"calc((var(--section-padding) * 2) + " + postTitleHeight + "px)",
+		});
+	}
 }
 
 // Плавная прокрутка к началу страницы
