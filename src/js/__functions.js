@@ -39,7 +39,7 @@ function randomArticlePrev() {
 
 // Автоподгонка размера заголовка поста
 function postTitleSize() {
-	if ($(window).width() < 960) {
+	if ($(window).width() > 960) {
 		let postBrandingHeight = $(headerBranding).height();
 		$(singlePostHeader).css({
 			"min-height":

@@ -48,7 +48,7 @@ function randomArticlePrev() {
 
 // Автоподгонка размера заголовка поста
 function postTitleSize() {
-	if (jQuery(window).width() < 960) {
+	if (jQuery(window).width() > 960) {
 		let postBrandingHeight = jQuery(headerBranding).height();
 		jQuery(singlePostHeader).css({
 			"min-height":
