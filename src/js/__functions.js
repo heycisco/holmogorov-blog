@@ -11,7 +11,7 @@ function preventDefault() {
 // Рандомизируем оформление постов
 function randomArticlePrev() {
 	$(articlePrev).each(function () {
-		let randomBackground = Math.random() * 10 + 1;
+		let randomBackground = Math.random() * 9 + 1;
 		let bgType = randomBackground.toFixed();
 		$(this).addClass("bg-" + bgType);
 	});
