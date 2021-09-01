@@ -82,6 +82,7 @@
 		.wrapper {
 			padding-top: 210px;
 			margin: 0 1em;
+			overflow-x: hidden;
 			@media (max-width: 720px) {
 				padding-top: unset;
 			}

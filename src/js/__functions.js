@@ -11,7 +11,7 @@ function preventDefault() {
 // Рандомизируем оформление постов
 function randomArticlePrev() {
 	$(articlePrev).each(function () {
-		let randomBackground = Math.random() * 1 + 1;
+		let randomBackground = Math.random() * 10 + 1;
 		let bgType = randomBackground.toFixed();
 		$(this).addClass("bg-" + bgType);
 	});
@@ -27,7 +27,7 @@ function randomArticlePrev() {
 
 	$(articleStaple).each(function () {
 		let randomLeft = Math.random() * 160 + 6;
-		let randomBottom = Math.random() * 24 + 6;
+		let randomBottom = Math.random() * 18 - 6;
 		let randomRotate2 = Math.random() * 45 - 23;
 		$(this).css({
 			left: +randomLeft + "px",
@@ -52,23 +52,6 @@ function postTitleSize() {
 				"calc((var(--section-padding) * 2) + " + postTitleHeight + "px)",
 		});
 	}
-}
-
-// Плавная прокрутка к началу страницы
-function scrollTop() {
-	$(scrollTopBtn).on("click", function () {
-		let el = $(this);
-		let dest = el.attr("href");
-		if (dest !== undefined && dest !== "") {
-			$("html").animate(
-				{
-					scrollTop: $(dest).offset().top,
-				},
-				500
-			);
-		}
-		return false;
-	});
 }
 
 // Сворачивание длинного содержимого поста
@@ -103,7 +86,7 @@ function mobileMenuFunc() {
 	$("#mobile_menu_toggle .menu-toggle").click(function () { 
 		$("body").toggleClass("mobile-menu-open");
 	});
-		$("#mobile_menu_toggle .up").click(function () { 
+		$("#mobile_menu_toggle .up, .btn-to-top").click(function () { 
 			$('body,html').animate({
 				scrollTop: 0
 		  }, 400);

@@ -1,6 +1,6 @@
 <div class="main-aside">
 	<div class="social">
-		<a href="#" id="link_vk" title="Название ссылки">
+		<a href="https://vk.com/v.holmogorov" id="link_vk" title="В Контакте">
 			<svg
 				aria-hidden="true"
 				focusable="false"
@@ -17,7 +17,7 @@
 				></path>
 			</svg>
 		</a>
-		<a href="#" id="link_fb" title="Название ссылки">
+		<a href="https://www.facebook.com/valentin.holmogorov" id="link_fb" title="Facebook">
 			<svg
 				aria-hidden="true"
 				focusable="false"
@@ -34,7 +34,7 @@
 				></path>
 			</svg>
 		</a>
-		<a href="#" id="link_insta" title="Название ссылки">
+		<a href="https://www.instagram.com/v_holmogorov/" id="link_insta" title="Instagram">
 			<svg
 				aria-hidden="true"
 				focusable="false"
@@ -51,6 +51,8 @@
 				></path>
 			</svg>
 		</a>
+
+<!--
 		<a href="#" id="link_yandex" title="Название ссылки">
 			<svg
 				aria-hidden="true"
@@ -68,5 +70,6 @@
 				></path>
 			</svg>
 		</a>
+-->
 	</div>
 </div>

@@ -25,19 +25,19 @@
 		position: absolute;
 		display: block;
 		background-repeat: no-repeat;
-		background-size: auto;
+		background-size: cover;
 	}
 
 	&:before {
-		height: 24px;
-		top: -23px;
-		background-position: center bottom;
+		height: 40px;
+		top: -40px;
+		background-position: center top;
 	}
 
 	&:after {
-		height: 24px;
-		bottom: -23px;
-		background-position: center top;
+		height: 40px;
+		bottom: -40px;
+		background-position: center bottom;
 	}
 
 	.post-link {
@@ -47,7 +47,7 @@
 		left: 0;
 		top: -8px;
 		display: block;
-		z-index: 1;
+		z-index: 3;
 	}
 
 	.wrapper {
@@ -183,6 +183,8 @@
 			width: calc(36px * var(--staple-size));
 			height: auto;
 			position: absolute;
+			z-index: 4;
+			pointer-events: none;
 		}
 
 		a {
