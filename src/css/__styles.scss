@@ -372,3 +372,21 @@ p.has-text-align-center {
 		}
 	}
 }
+
+
+// LIGHTBOX (TEMP)
+#slb_viewer_wrap .slb_theme_slb_default .slb_data_title, #slb_viewer_wrap .slb_theme_slb_default .slb_group_status {
+	font-family: inherit;
+	font-size: 1.5em;
+	margin-top: 0.5em;
+	color: inherit;
+	margin-right: .2em;
+	display: inline-block;
+}
+#slb_viewer_wrap .slb_theme_slb_default .slb_container {
+	box-shadow: none;
+	border-radius: 2px;
+}
+#slb_viewer_wrap .slb_theme_slb_default .slb_group_status, span.slb_slideshow, .slb_nav {
+	display: none;
+}
