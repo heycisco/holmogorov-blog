@@ -131,3 +131,19 @@ a:focus,
 a:active {
 	color: inherit;
 }
+
+
+::-webkit-scrollbar {
+	width: 0.5em;
+	&-track {
+		background: $gray-1;
+	}
+
+	&-thumb {
+		background: rgba(0, 0, 0, 0.3);
+		&:hover {
+			background: $orange;
+		}
+	}
+}
+
