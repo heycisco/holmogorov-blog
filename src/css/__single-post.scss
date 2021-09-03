@@ -39,6 +39,13 @@
 
 			.hwrapper {
 				max-width: var(--main-block-width);
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				flex: 1 1 auto;
+				h2 {
+					flex: 1 1 auto;
+			  }
 			}
 
 			.post-title {
@@ -98,12 +105,13 @@
 		// padding: 0 0.2em;
 		margin-top: var(--section-padding);
 		padding: 4em 0;
-		@media (max-width: 720px) {
-			padding: 6em 0;
-		}
 		width: 100%;
 		@include font-extra;
 		font-size: 0.9em;
 		text-transform: uppercase;
+		@media (max-width: 720px) {
+			padding: 6em 0;
+			font-size: 0.7em;
+		}
 	}
 }

@@ -1,10 +1,11 @@
 <?php get_header(); ?>
-<main class="content" role="main">
+<main class="main-block page search">
+<div class="wrapper">
+<section class="content">
 <?php if ( have_posts() ) : ?>
 <header class="header">
-<h1 class="entry-title"><?php printf( esc_html__( 'Search Results for: %s', 'starchenkov-dev' ), get_search_query() ); ?></h1>
+<h1 class="entry-title"><?php printf( esc_html__( 'Результаты поиска: %s', 'starchenkov-dev' ), get_search_query() ); ?></h1>
 </header>
-<section>
 <?php while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'entry' ); ?>
 <?php endwhile; ?>
@@ -12,15 +13,16 @@
 <?php else : ?>
 <article class="post no-results not-found">
 <header class="header">
-<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'starchenkov-dev' ); ?></h1>
+<h1 class="entry-title">Ничего не найдено</h1>
 </header>
 <div class="entry-content">
-<p><?php esc_html_e( 'Sorry, nothing matched your search. Please try again.', 'starchenkov-dev' ); ?></p>
+<p>Попробуем ещё?</p>
 <?php get_search_form(); ?>
 </div>
 </article>
-</section>
 <?php endif; ?>
+</section>
+</div>
 </main>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -314,3 +314,61 @@ input[type="submit"] {
 	}
 }
 
+.content article p {
+	a {
+		color: $orange;
+		transition: border $tansition-out;
+		border-bottom: 1px solid #0000;
+		&:hover {
+			transition: border $tansition-in;
+			border-bottom: 1px solid $orange;
+		}
+	}
+}
+article.not-found {
+	form {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		margin-bottom: 1em;
+	}
+	img {
+		margin-bottom: 2em;
+	}
+	a {
+	color: $orange;
+	transition: border $tansition-out;
+	border-bottom: 1px solid #0000;
+		&:hover {
+			transition: border $tansition-in;
+			border-bottom: 1px solid $orange;
+		}
+	}
+}
+.wp-block-search__inside-wrapper {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+}
+p.has-text-align-center {
+	text-align: center;
+}
+.wp-block-tag-cloud {
+	text-align: center;
+	a {
+		text-transform: uppercase;
+		margin: 0.3em 0.5em;
+		display: inline-block;
+  }
+}
+
+.captcha-image {
+	.cf7ic_instructions span {
+		color: $orange;
+	}
+	label > input {
+		&:checked + svg, &:focus + svg {
+			border: 2px solid $orange;
+		}
+	}
+}

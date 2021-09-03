@@ -3,9 +3,6 @@ function preventDefault() {
 	$('.menu-item-has-children a[href=#]').on("click", function (event) {
 		event.preventDefault();
 	});
-	$('button').on("click", function (event) {
-		event.preventDefault();
-	});
 }
 
 // Рандомизируем оформление постов
@@ -79,6 +76,7 @@ function menuChildDecktop() {
 			$(this).parent().find("ul").show(300);
 		}
 	});
+	$('.sub-menu .current-menu-item, .sub-menu .current-menu-parent').parent().parent().addClass('clicked').find("ul").show();
 }
 
 // Функционал мобильного меню
@@ -101,3 +99,8 @@ function scrollTop() {
 	}
 }
 window.onscroll=scrollTop
+
+
+function lightBox () {
+//  сделать
+}

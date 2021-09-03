@@ -2,43 +2,21 @@
 	&__header {
 		position: relative;
 		&__title {
-			position: absolute;
 			font-size: 3em;
-			color: $header-bg;
-			top: 0;
-			left: 50%;
+			color: #4f4f4f;
 			text-align: center;
-			padding: 0.25em 0.5rem;
 			text-transform: uppercase;
-			top: 50%;
-			transform: translate(-50%, -50%);
-		}
-		&__image {
-			max-height: 200px;
-			overflow: hidden;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			opacity: 0;
-			img {
-				width: 100%;
-				opacity: 0.5;
-				filter: blur(3px);
-			}
 		}
 		&__meta {
-			position: absolute;
-			bottom: 0;
-			background: $header-bg;
-			padding: 0.25em 1rem;
-			color: $white-transparent;
+			text-align: center;
 			width: 100%;
 		}
 	}
-	
-	@media (max-width: 720px) {
-		section.category__posts {
-			padding: 0 1.5rem;
-		}
-	}
+
+}
+.tags__header h1 {
+	font-size: 3em;
+	color: #4f4f4f;
+	text-align: center;
+	text-transform: uppercase;
 }

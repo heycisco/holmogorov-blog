@@ -8,16 +8,7 @@
 		<?php single_term_title(); ?>
 	</h1>
 
-<!-- Миниатюра категории -->
-	<?php 
-	$term_id = get_queried_object_id();
-	$image_id = get_term_meta( $term_id, '_thumbnail_id', 1 );
-	$image_url = wp_get_attachment_image_url( $image_id, 'full' );
-	if ( $image_url ) : ?>
-	<div class="category__header__image">
-		<?php echo '<img src="'. $image_url .'">'; ?>
-	</div>
-	<?php endif; ?>
+
 
 
 <!-- Описание категории -->

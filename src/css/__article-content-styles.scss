@@ -99,4 +99,11 @@
 	>*:last-child {
 		margin-bottom: 0;
 	}
+	.wp-block-image a {
+		border-bottom: none;
+
+		&:hover {
+			border-bottom: none;
+		}
+	}
 }
